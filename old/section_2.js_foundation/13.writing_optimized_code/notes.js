@@ -16,39 +16,33 @@
 
 */
 
-
-
 //inline caching:
 
 function findUser(user) {
-    return `found ${uer.firstname} ${user.lastName}`
+  return `found ${user.firstname} ${user.lastName}`;
 }
 
 const userData = {
+  firstName: "Johnson",
 
-    firstName: "Johnson",
-
-    lastName: "Junior"
-}
+  lastName: "Junior",
+};
 
 findUser(userData);
 
 /*
     if we call this method multiple times, the inline caching will allow the compiler
     to optimize this by replacing the function call (which looks for the user data)
-    with the template string value:`found ${uer.firstname} ${user.lastName}`
+    with the template string value:`found ${user.firstname} ${user.lastName}`
 
 
 */
 
-
-
 //hidden classes:
 
 function Animal(x, y) {
-
-    this.x = x;
-    this.y = y;
+  this.x = x;
+  this.y = y;
 }
 
 const obj1 = new Animal(1, 2);

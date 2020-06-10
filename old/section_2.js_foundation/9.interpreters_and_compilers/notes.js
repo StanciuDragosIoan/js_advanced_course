@@ -2,25 +2,26 @@
     Interpreters and compilers
 
     In programming there are 2 ways to translate code into
-    machine-understandable language (machine code): the interpreter and the compiler
+    machine-understandable language (machine code): the interpreter and 
+    the compiler
 
-    with the interpreter = we translate and read the files (line by line on the fly)
+    with the interpreter = we translate and read the 
+    files (line by line on the fly)
 
-    compiler does not translate on the fly (it works ahead of time, reads all the code
-    and translates it into a language that can be understood by the CPU)
+    compiler does not translate on the fly (it works ahead of time, 
+    reads all the code and translates it into a language that can 
+    be understood by the CPU)
 
 */
 
-
 //interpreter vs compiler
 function someCalculation(x, y) {
-    return x + y;
+  return x + y;
 }
 
 for (let i = 0; i < 1000; i++) {
-    someCalculation(5, 4); //returns 9 
+  someCalculation(5, 4); //returns 9
 }
-
 
 //interpreter will read the code above line by line and execute it
 
@@ -49,5 +50,3 @@ for (let i = 0; i < 1000; i++) {
                     *bytecode is somewhere between high lvl code and machine code
                 the compiler will take the bytecode and re-write it in machine code
 */
-
-

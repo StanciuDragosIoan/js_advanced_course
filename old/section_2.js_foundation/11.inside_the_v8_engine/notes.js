@@ -2,25 +2,25 @@
 
     interpreters vs compilers
 
-        interpreters are quick to get up and running (with the interpreter we do not
-        need to convert the code into another language as we do with the compiler)
-        there's no compilation step
+        interpreters are quick to get up and running (with the interpreter we 
+        do not need to convert the code into another language as we do with 
+        the compiler) there's no compilation step
 
         because of this an interpreter is better for a language like JS
 
         initially JS was designed for the browser (it had to be executed fast
         so interpreters were a natural choice for it)
 
-        con for interpreter (when we run the same code more than once - e.g. in a loop - it
-            can get really slow)
+        con for interpreter (when we run the same code more than once - e.g. 
+        in a loop - it can get really slow)
 
-            the compiler helps here (it takes more time to be set up as it has to go through
-                all the code, understand it and 'spit' it out in a different language, but the
-                compiler will be smart enough -e.g. if it sees same code looped over, it can just
-                simplify it, and instead of calling the same function multiple times, it can just 
-                replace the funciton call with the returned value - in this case instead of doing
-                someCalculation(5,4) 1000 times, it does it once and then replaces the other 999
-                calls with 9)
+        the compiler helps here (it takes more time to be set up as it has to go through
+            all the code, understand it and 'spit' it out in a different language, but the
+            compiler will be smart enough -e.g. if it sees same code looped over, it can just
+            simplify it, and instead of calling the same function multiple times, it can just 
+            replace the funciton call with the returned value - in this case instead of doing
+            someCalculation(5,4) 1000 times, it does it once and then replaces the other 999
+            calls with 9)
             
             because the compiler does not need to re-run the same step multiple times, it is much faster
             these 'improvements' made by the compiler are called optimizations
@@ -69,11 +69,10 @@
 
 */
 
-
 function someCalculation(x, y) {
-    return x + y;
+  return x + y;
 }
 
 for (let i = 0; i < 1000; i++) {
-    someCalculation(5, 4); //returns 9 
+  someCalculation(5, 4); //returns 9
 }
