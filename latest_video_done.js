@@ -1,6 +1,6 @@
 /*
  
 
-15 (left at video 16 minute 5:00)
+16 (left to do 17)
 
 */
