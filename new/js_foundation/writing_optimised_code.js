@@ -11,7 +11,8 @@ delete
 
 
 
-// inline caching
+// inline caching (if we call findUser() multiple time, the compiler will cache the user instead 
+//of looking for it again)
 
 function findUser(user) {
     return `found ${user.firstName} ${user.lastName}`;
