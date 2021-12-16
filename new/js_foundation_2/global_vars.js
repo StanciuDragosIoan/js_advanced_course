@@ -1,0 +1,1 @@
+// globals are bad because of name collisions
